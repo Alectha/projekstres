@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font: bold 18px/36px 'Montserrat', sans-serif;
+    background-color: #f4ed46;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    margin: 26px 0;
+    text-align: center;
+    text-shadow: 1px 2px 2px #5ce1f4;
+}
+
+.container {
+    width: 720px;
+    background-color: white;
+    margin: 5vh auto;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px #b4f2ff;
+    border-radius: 5px;
+
+}
+
+.inf,
+.ilust,
+.galery {
+    display: inline-block;
+}
+
+.galery,
+.inf {
+    float: left;
+}
+
+
+.galery li {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #5ce1f4;
+    box-shadow: 0 0 5px 2px #b4f2ff;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.galery .elaina {
+    border: 2px solid #ff9dfa;
+}
+
+.galery li img,
+.galery li,
+li .name,
+.inf,
+.ilust {
+    border-radius: 5px;
+
+}
+
+li .name {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, rgba(20, 49, 72, 0) 45%, #5ce1f4 110%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.galery li:hover .name {
+    opacity: 1;
+}
+
+.inf {
+    width: 35%;
+    height: 550px;
+    background-color: #fffa73;
+    margin: 14px;
+    border-left: 2px solid #5ce1f4;
+    border-top: 2px solid #5ce1f4;
+    border-bottom: 2px solid #5ce1f4;
+
+}
+
+.ilust {
+    width: 44%;
+    height: 550px;
+    border-bottom: 2px solid #f4ed46;
+    border-top: 2px solid #f4ed46;
+    border-right: 2px solid #f4ed46;
+    margin: 14px;
+    float: right;
+    overflow: hidden;
+}
+
+.ilust img {
+    animation: ilust 1s ease;
+}
+
+.char-inf {
+    color: #333;
+    margin: 10px 0 0 4px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.char-inf .stat-name {
+    width: 80px;
+}
+
+.char-inf .head {
+    padding: 7px 7px 2px 0;
+    font-size: 18px;
+    width: 220px;
+    height: 40px;
+
+}
+
+.char-bg {
+    height: 35px;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.char-inf .bg {
+    font-size: 11px;
+    text-indent: 10px;
+}
+
+/* animasi */
+@keyframes ilust {
+    0% {
+        transform: translateX(999px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* clear ngab */
+.clear {
+    clear: both;
+}

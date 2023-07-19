@@ -1,0 +1,24 @@
+.inf {
+    width: 35%;
+    height: 550px;
+    background-color: #ffbcfc;
+    margin: 14px;
+    border-left: 2px solid #5cc4f4;
+    border-top: 2px solid #5cc4f4;
+    border-bottom: 2px solid #5cc4f4;
+
+}
+
+.ilust img {
+    margin-left: -30px;
+}
+
+.ilust {
+    border-bottom: 2px solid #ff9dfa;
+    border-top: 2px solid #ff9dfa;
+    border-right: 2px solid #ff9dfa;
+}
+
+.galery .elaina {
+    border: 2px solid #ff9dfa;
+}
